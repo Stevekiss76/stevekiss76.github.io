@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="/Antal HTML/index.html">Home</a>
+        </li>
+        <li>
+            <a href="/Antal HTML/tabla.html">Adatok</a>
+        </li>
+        <li>
+            <a href="/Antal HTML/Programozás.html">Programozás</a>
+        </li>
+        <ul>
+
+            </p>
+            <b>Végállás beállítása:</b>
+            </p>
+            <p>
+                <i>FIGYELEM: A beállítás felszerelt állapotban vagy a redőnylábra állítással lehetséges
+                    Ha a motor nem jelez vissza (nem sípol, nem mozdul be) akkor nem megfelelő helyen nyomta meg a
+                    STOP
+                    gombot. Ilyenkor újra kell kezdeni a beállítást</i> </p>
+            <p> <i>A Távirányítót tanítsuk a motorra (ld. távirányító tanítása)</i> </p>
+
+            <p>PROGRAMOZÓ Gomb</p>
+            <p>röviden nyomva: pillanatnyi árammegszakítás (lehetővé teszi a távirányító feltanítását a motorra)</p>
+            <p> hosszan nyomva: megváltoztatja a motor forgásirányát</p>
+
+            <p><b>Forgásirány változtatása távirányító segítségével</b></p>
+
+            <p><i>ha balos a redőny: 2X P2 LE</i></p>
+            <p> <i> ha jobbos a redőny: 2X P2 FEL</i></p>
+
+            <p>Felső végállás beállítás</p>
+            <ul>
+                <li>Tekerje fel a palástot úgy, hogy 30-40 cm látszódjon ki a tokból</li>
+                <li>Nyomja meg a P2 FEL P2 gombokat – a motor visszajelez rövid fel/le mozgással</li>
+                <li>Nyomja meg a FEL gombot, a palást normál sebességgel elindul felfelé</li>
+                <li>Ha már a palást kb. 10 cm van a kívánt végállástól nyomja meg a P2 gombot. A motor ekkor léptető
+                    módba vált,
+                    ami lehetővé teszi a kívánt végállás pontos elérését</li>
+                <li>Ha a palást a kívánt felső végállásba került, nyomja meg és tartsa nyomva a STOP gombot legalább 5
+                    mp.-ig, a
+                    motor visszajelez rövid fel/le mozgással, ekkor elengedheti a STOP gombot.</li>
+            </ul>
+
+            <p> <b>Felső végállás be van állítva!</b> </p>
+
+            <p> Alsó végállás beállítása</p>
+            <ul>
+                <li>Nyomja meg a LE gombot, a palást normál sebességgel elindul lefelé</li>
+                <li>Ha már a palást kb. 10 cm van a kívánt végállástól nyomja meg a P2 gombot. A motor ekkor léptető
+                    módba vált,
+                    ami lehetővé teszi a kívánt végállás pontos elérését</li>
+                <li>Ha a palást a kívánt felső végállásba került, nyomja meg és tartsa nyomva a STOP gombot legalább 5
+                    mp.-ig, a
+                    motor visszajelez rövid fel/le mozgással, ekkor elengedheti a STOP gombot.</li>
+            </ul>
+            <p>
+                <b>Alsó végállás be van állítva!</b>
+            </p>
+
+            <div>A végállás beállítás befejeződött!</div>
+
+
+
+    <dir><b>Amennyiben módosítani szeretnénk a végállásokon mind a felsőt és alsót is újra kell
+                    programozni!</b></dir>
+  <p><h3>További programozási lehetőségek nyomatékos motorra</h3></p>
+      Szakaszos (rész nyitás ) ki-be kapcsolása:          
+   <p><h3>P2 -> Fel ->Le</h3></p>         
+            Aktiv: 2 bip (bekapcsolva)
+            Inaktív: 1 bip (kikapcsolva)
+
+            A fel vagy le gomb megnyomásakor léptethető résznyitás aktív, 2mp.-től hosszabb ideig nyomva bármelyik irány
+            gombot a motor a kiválasztott végállásig mozog!
+
+            Nyomaték érzékelés beállítása ( 3 fokozat le-föl leírtak alapján!!)
+            P2->STOP->Le
+
+            Minden egyes parancssor kiadását követően a motor egy gyors páros LE-FEL mozdulatot tesz!
+            Abban a fokozatban van amennyi páros mozdulatot számol..
+            Így : I. fokozat le-föl 1×
+            II.fokozat le-föl 2×
+            III. fokozat le-föl 3×
+
+            Visszanyitás funkció ( a motor LE irányban érzékelt akadálynál 10cm-t visszanyit!)
+
+            Tanít -> Le ->Le
+            Aktiv: 2 bip (bekapcsolva)
+            Inaktív: 1 bip (kikapcsolva)
+
+            A motor LE irányban érzékelt akadálynál 10cm-t visszanyit!
+
+            Felhúzás nyomatéka /lefagyás védelem (extra érzékeny felhúzás 3 fokozat )
+            Tanít -> Fel -> STOP
+            Minden egyes parancssor kiadását követően a motor egy lassú páros LE-FEL mozdulatot tesz!
+            Abban a fokozatban van amennyi páros mozdulatot számolsz..
+            Így : I. fokozat le-föl 1× Teríték mennyiséghez m2 kell beállítani!
+            II.fokozat le-föl 2× Javasolt a II. fokozat !!
+            III. fokozat le-föl 3×
+
+            Köztes 3. állás :
+            Aktiválása :
+            A két végállás között egy tetszőleges helyen állítsuk meg a motort!
+            STOP 1× azután nyomjunk folyamatosan STOP 4mp-ig az aktív állapotot egy páros le-föl mozgás jelzi.
+            Működése :
+            A 3. állást rögzítettük ,most bármely helyzetből ebbe az állásba érkezik redőnyünk ,
+            ha a távirányítón 3mp-ig nyomva tartjuk a STOP gombot..
+
+            Rögzitett állás törlése :
+            A motort "futtassuk " a 3. Állásra itt 6×STOP gomb megnyomását végezzük a gombnyomások lassú 1mp es ütemben
+            legyenek!!!!
+            A köztes 3 . Állás törlését a motor 3 bip.-el jelzi !
+            Most beállítható egy új 3. állás az előzőekben leírtak szerint !!!!
+
+            Végállások törlése :
+            P2 -> Le -> P2
+            A végállások törlését egy LE-FEL mozdulatpár jelzi !!!
+            FIGYELEM !!! A motoron nincs beállítva végállás ilyenkor "végtelen" fordulatot tud
+            Távirányítók törlése :
+
+            P2 -> STOP ->P2
+            A távirányítók törlését egy LE-FÖL mozdulatpár jelzi !!!
+            Minden távirányító törölve !!
+            A motor vevőegységére jelenleg nincs programozva távirányító, a tanult módon programozzunk távirányítót!
+            </p>
+</body>
+
+</html>
